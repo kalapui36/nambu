@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>샛별교사 업무포털 활용 매뉴얼</title>
+    <title>샛별교사 업무포털 활용 안내</title>
     
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     
@@ -22,10 +22,11 @@
             line-height: 1.6;
         }
 
-        /* [Header] 파란색 메인 영역 */
+        /* [Header] */
         header {
             background-color: #1a365d; 
-            padding: 30px 25px 15px; 
+            padding: 35px 25px 15px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .header-inner {
@@ -33,14 +34,26 @@
             margin: 0 auto;
         }
 
-        /* 1. 기관명 */
+        /* 1. 최상단 기관명 영역 */
+        .agency-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .emblem {
+            height: 28px; 
+            width: auto;
+            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+        }
+
         .agency-text {
-            text-align: center;
             color: #90cdf4; 
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 12px; 
+            font-size: 17px; 
+            font-weight: 700; 
+            letter-spacing: 0.5px;
         }
 
         /* [Header Title] */
@@ -49,7 +62,7 @@
             align-items: center; 
             justify-content: center;
             gap: 15px; 
-            margin-bottom: 20px;
+            margin-bottom: 20px; 
         }
 
         .title-area img {
@@ -79,7 +92,7 @@
         /* 2. 제작자 영역 */
         .author-box {
             border-top: 1px solid rgba(255, 255, 255, 0.15); 
-            padding-top: 10px; /* 15px -> 10px로 축소 */
+            padding-top: 10px;
             text-align: right; 
         }
 
@@ -90,26 +103,25 @@
             letter-spacing: 0.5px;
         }
 
-        /* 3. 정의 영역 */
+        /* 3. 정의 영역: 얇은 가로 띠 */
         .definition-wrapper {
             background-color: #ffffff;
-            padding: 15px 20px; 
+            padding: 15px 20px;
             border-bottom: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         }
 
         .definition-box {
             max-width: 1050px; 
             margin: 0 auto;
             background-color: #f8fafc; 
-            border-radius: 8px; 
-            padding: 12px 25px; 
+            border-radius: 8px;
+            padding: 12px 25px;
             display: flex;
-            flex-direction: row; 
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 40px; 
-            border: 1px solid #e2e8f0;
+            border: 1px solid #e2e880;
         }
 
         .def-row {
@@ -121,7 +133,6 @@
             height: 20px; 
             width: auto;
             margin-right: -2px; 
-            display: block;
         }
 
         .def-divider {
@@ -132,13 +143,13 @@
         }
 
         .def-text {
-            font-size: 14px; 
+            font-size: 14px;
             color: #334155; 
             font-weight: 500;
             word-break: keep-all;
         }
 
-        /* [Container] 매뉴얼 카드 그리드 */
+        /* [Container] */
         .container {
             max-width: 1240px;
             margin: 40px auto 60px; 
@@ -182,20 +193,6 @@
             transition: transform 0.4s ease;
         }
 
-        .manual-card:hover .card-image-wrap img {
-            transform: scale(1.08); 
-        }
-
-        .no-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            color: #94a3b8;
-            font-size: 14px;
-            background-color: #f1f5f9;
-        }
-
         .card-content {
             padding: 24px;
             flex-grow: 1;
@@ -236,11 +233,6 @@
         .card-action::after {
             content: '→';
             margin-left: 6px;
-            transition: transform 0.3s ease;
-        }
-
-        .manual-card:hover .card-action::after {
-            transform: translateX(5px);
         }
 
         /* [Footer] */
@@ -257,7 +249,6 @@
             width: auto;
         }
 
-        /* 모바일 대응 */
         @media (max-width: 950px) {
             .definition-box {
                 flex-direction: column;
@@ -284,11 +275,14 @@
 
     <header>
         <div class="header-inner">
-            <div class="agency-text">서울특별시남부교육지원청 초등교육지원과</div>
+            <div class="agency-area">
+                <img src="emblem.png" alt="엠블럼" class="emblem">
+                <span class="agency-text">서울특별시남부교육지원청 초등교육지원과</span>
+            </div>
             
             <div class="title-area">
                 <img src="logo_sb_text.png" alt="샛별교사 로고">
-                <h1 class="main-title">업무포털 활용 매뉴얼</h1>
+                <h1 class="main-title">업무포털 활용 안내</h1>
             </div>
             
             <p class="header-desc">샛별교사에게 가장 필요한 내용을 선별하여, 샛별교사가 직접 만든 업무포털 활용법</p>
