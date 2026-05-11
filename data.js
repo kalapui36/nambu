@@ -1,0 +1,80 @@
+// data.js (맞춤법 반영 및 순서 정렬본)
+const manualData = [
+  {
+    id: 1,
+    title: "💻 업무포털 안내",
+    description: "서울특별시교육청 업무포털 첫 화면 접속 방법 및 주요 메뉴 안내",
+    thumbnail: "t_portal.png",
+    link: "m_portal.html"
+  },
+  {
+    id: 2,
+    title: "✍️ 기안문 작성",
+    description: "에듀파인 일반기안문 서식을 열어 본문을 작성하고 결재자를 지정하는 과정",
+    thumbnail: "t_draft.png",
+    link: "m_draft.html"
+  },
+  {
+    id: 3,
+    title: "📜 공문서 작성법",
+    description: "항목 번호 체계, 본문 들여쓰기 등 실무에서 자주 사용되는 공문서 작성 규칙",
+    thumbnail: "t_format.png",
+    link: "m_format.html"
+  },
+  {
+    id: 4,
+    title: "🏢 외부 수신자 지정",
+    description: "타 기관 발송 시 조직도 및 행안부유통을 통해 외부 수신처를 지정하는 방법",
+    thumbnail: "t_external.png",
+    link: "m_external.html"
+  },
+  {
+    id: 5,
+    title: "💰 지출 품의",
+    description: "에듀파인에서 지출 품의 목록을 작성하고 요구 금액을 입력하여 상신하는 방법",
+    thumbnail: "t_expense.png",
+    link: "m_expense.html"
+  },
+  {
+    id: 6,
+    title: "♻️ 이전 자료 재작성", // 띄어쓰기 수정 완료
+    description: "이전에 결재 완료된 문서의 양식을 그대로 불러와 내용을 수정하여 기안하는 방법",
+    thumbnail: "t_copy.png",
+    link: "m_copy.html"
+  },
+  {
+    id: 7,
+    title: "📧 내부메일 확인 및 작성",
+    description: "에듀파인 내부메일 수신함 확인, 수신자 검색 및 첨부파일을 포함한 메일 작성법",
+    thumbnail: "t_mail.png",
+    link: "m_mail.html"
+  },
+  {
+    id: 8,
+    title: "↔️ 문서 환경 가로 설정",
+    description: "결재선과 본문을 한 화면에서 보기 편하게 개인문서환경을 가로로 설정하는 팁",
+    thumbnail: "t_landscape.png",
+    link: "m_landscape.html"
+  },
+  {
+    id: 9,
+    title: "🏠 EVPN 신청 및 접속",
+    description: "학교 외부 망에서 업무포털에 접속하기 위한 EVPN 신청 및 접속 절차",
+    thumbnail: "t_evpn.png",
+    link: "m_evpn.html"
+  },
+  {
+    id: 10,
+    title: "🚗 나이스 출장 상신",
+    description: "관내 및 관외 출장 상신, 여비 지급 여부 체크 및 결재 요청 방법",
+    thumbnail: "t_btrip.png",
+    link: "m_btrip.html"
+  },
+  {
+    id: 11,
+    title: "🕒 나이스 조퇴 상신",
+    description: "나이스 시스템에서 조퇴 상신을 하고 결재선을 지정하는 기본 방법",
+    thumbnail: "t_leave.png",
+    link: "m_leave.html"
+  }
+];
