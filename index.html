@@ -335,8 +335,9 @@
                 ? `<img src="${item.thumbnail}" alt="${item.title}" onerror="this.outerHTML='<div class=\\'no-image\\'>이미지 준비중</div>'">`
                 : `<div class="no-image">이미지 없음</div>`;
 
+            // GA4 클릭 추적 센서
             const cardHtml = `
-                <a href="${item.link}" class="manual-card" target="_blank" rel="noopener noreferrer">
+                <a href="${item.link}" class="manual-card" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'manual_click', { 'manual_title': '${item.title}' });">
                     <div class="card-image-wrap">${imageHtml}</div>
                     <div class="card-content">
                         <h2 class="card-title">${item.title}</h2>
