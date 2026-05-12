@@ -6,6 +6,15 @@
     <meta name="robots" content="noindex, nofollow">
     <title>샛별교사 업무포털 활용 안내</title>
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC3SLD3F4X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PC3SLD3F4X');
+    </script>
+    
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     
     <style>
@@ -327,7 +336,7 @@
                 : `<div class="no-image">이미지 없음</div>`;
 
             const cardHtml = `
-                <a href="${item.link}" class="manual-card">
+                <a href="${item.link}" class="manual-card" target="_blank" rel="noopener noreferrer">
                     <div class="card-image-wrap">${imageHtml}</div>
                     <div class="card-content">
                         <h2 class="card-title">${item.title}</h2>
